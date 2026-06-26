@@ -47,7 +47,6 @@ All investigations include:
 
 - Alert Details
 - Telemetry Analysis
-- Timeline Construction
 - MITRE ATT&CK Mapping
 - Findings
 - Lessons Learned
