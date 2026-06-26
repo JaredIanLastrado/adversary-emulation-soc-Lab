@@ -29,7 +29,7 @@ Investigations focus on validating detections, analyzing telemetry, identifying 
 | Case ID | Investigation |
 |----------|----------|
 | Case-005 | Sudo Privilege Investigation |
-| Case-006 | SSH Authentication Attack |
+| Case-006 | SSH Authentication Investigation |
 
 ### Network & Application Investigations
 
@@ -37,7 +37,7 @@ Investigations focus on validating detections, analyzing telemetry, identifying 
 |----------|----------|
 | Case-007 | SQL Injection Investigation |
 | Case-008 | Command Injection Investigation |
-| Case-009 | Network Service Discovery Threat Hunt |
+| Case-009 | Network Service Discovery Investigation|
 
 ---
 
