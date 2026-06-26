@@ -33,7 +33,7 @@ systeminfo
 
 While reviewing telemetry in Wazuh, it was observed that these commands did not generate dedicated security alerts.
 
-Although Sysmon Process Creation telemetry existed, analysts were required to manually search process creation logs to identify Discovery activity.
+Although Sysmon Process Creation telemetry existed, I was required to manually search process creation logs to identify Discovery activity.
 
 This represented a detection gap within the environment.
 
@@ -268,11 +268,11 @@ Custom rule successfully generated alerts for whoami.exe, ipconfig.exe, and syst
 
 A detection gap was identified during adversary emulation exercises when Windows Discovery commands executed without generating dedicated alerts.
 
-Although Sysmon Process Creation telemetry existed, analysts were required to manually review process creation events to identify Discovery activity.
+Although Sysmon Process Creation telemetry existed, I was required to manually review process creation events to identify Discovery activity.
 
 A custom Wazuh rule was developed to detect execution of whoami.exe, ipconfig.exe, and systeminfo.exe and map the activity to MITRE ATT&CK Discovery techniques T1033, T1016, and T1082.
 
-Following deployment, the custom detection successfully generated dedicated alerts for Discovery activity, improving analyst visibility and strengthening detection coverage within the AESOC environment.
+Following deployment, the custom detection successfully generated dedicated alerts for Discovery activity, improving visibility and strengthening detection coverage within the AESOC environment.
 
 The project successfully demonstrated the complete Detection Engineering lifecycle:
 
