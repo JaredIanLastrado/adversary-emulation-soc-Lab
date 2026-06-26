@@ -92,7 +92,7 @@ As a result, benign activity was being classified with the same severity as pote
 
 ### Tuning Objective
 
-Reduce the severity of known PowerShell Script Policy Test artifacts while maintaining visibility for analysts.
+Reduce the severity of known PowerShell Script Policy Test artifacts while maintaining visibility.
 
 Instead of suppressing the activity entirely, a child rule was created to identify PowerShell-generated Script Policy Test files and reclassify them as low-severity events.
 
