@@ -1,5 +1,4 @@
 # Adversary Emulation & Security Operations Center (AESOC)
-# Adversary Emulation Security Operations Center (AESOC)
 
 ![Lab Architecture](Documentation/01-Lab-Architecture.png)
 
