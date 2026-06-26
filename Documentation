@@ -1,0 +1,10 @@
+# Documentation
+
+This directory contains architecture diagrams, workflows, and supporting documentation for the AESOC environment.
+
+## Contents
+
+- Lab Architecture
+- Telemetry Flow
+- Attack Simulation Flow
+- Incident Response Workflow
