@@ -313,7 +313,7 @@ A PHP file was uploaded through the DVWA File Upload module to simulate a malici
 
 Security Onion successfully detected the upload and generated a Suricata alert identifying PHP code within the HTTP POST request.
 
-![Detection Validation](Screenshots/02-Detection-Validation.png)
+![Detection Validation](Screenshots/02-Detection-Validaton.png)
 
 ---
 
