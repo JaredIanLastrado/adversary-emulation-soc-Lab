@@ -1,6 +1,6 @@
 # Adversary Emulation Security Operations Center (AESOC)
 
-AESOC is a cybersecurity homelab project designed to simulate the responsibilities of a Security Operations Center (SOC) analyst. The environment combines endpoint and network telemetry from Windows and Linux systems and centralizes monitoring through Wazuh and Security Onion.
+AESOC is a cybersecurity homelab project designed to emulate real-world Security Operations Center (SOC) workflows through centralized monitoring, incident investigation, threat hunting, detection engineering, and adversary simulation.
 
 The project focuses on incident investigation, threat hunting, detection engineering, alert tuning, dashboard development, and MITRE ATT&CK-mapped adversary emulation activities.
 
@@ -58,6 +58,7 @@ The result is AESOC (Adversary Emulation Security Operations Center), a personal
 
 - Wazuh
 - Security Onion
+- OPNsense
 - Sysmon
 - Auditd
 - Suricata
