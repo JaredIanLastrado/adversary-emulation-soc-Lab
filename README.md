@@ -1,4 +1,46 @@
 # Adversary Emulation & Security Operations Center (AESOC)
+# Adversary Emulation Security Operations Center (AESOC)
+
+![Lab Architecture](Documentation/01-Lab-Architecture.png)
+
+## Portfolio Highlights
+
+* 9 Security Investigations
+* 1 Detection Engineering Project
+* 1 Detection Tuning Project
+* 2 SOC Monitoring Dashboards
+* Windows and Linux Telemetry Analysis
+* Wazuh SIEM and Security Onion NSM
+* MITRE ATT&CK Mapped Investigations
+
+## Technologies Used
+
+* Wazuh
+* Security Onion
+* Sysmon
+* Auditd
+* Suricata
+* Zeek
+* Windows Server 2022
+* Windows 10
+* Rocky Linux
+* OPNsense
+* Proxmox VE
+
+## Skills Demonstrated
+
+* Security Monitoring
+* Incident Investigation
+* Threat Hunting
+* Detection Engineering
+* Detection Tuning
+* Network Security Monitoring
+* SIEM Analysis
+* Log Analysis
+* MITRE ATT&CK Mapping
+* Dashboard Development
+
+---
 
 AESOC is a cybersecurity homelab project designed to emulate real-world Security Operations Center (SOC) workflows through centralized monitoring, incident investigation, threat hunting, detection engineering, and adversary simulation.
 
