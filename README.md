@@ -39,7 +39,6 @@ The result is AESOC (Adversary Emulation Security Operations Center), a personal
 | Beelink SER5 Pro | Proxmox virtualization host |
 | Beelink EQi12 | OPNsense firewall and network security gateway |
 | NetGear GS108TV3 | VLAN-capable managed switch |
-| TP-Link AX3000 | Wireless access point |
 
 ## Virtual Infrastructure
 
