@@ -140,7 +140,7 @@ A registry value named **Updater** was created within the Windows Run Key locati
 
 Wazuh successfully generated an alert following execution of the registry modification command, confirming visibility into registry-related activity.
 
-![Detection Validation](Screenshots/02-Alert-Fired.png)
+![Detection Validation](Screenshots/02-Alert-fired.png)
 
 ---
 
