@@ -151,4 +151,4 @@ Alert analysis confirmed execution of an encoded PowerShell command and provided
 
 ## Conclusion
 
-An encoded PowerShell command was executed as part of a controlled adversary emulation exercise to validate detection and investigation capabilities. Wazuh successfully detected the activity, generated a high-severity alert, and captured sufficient telemetry to support a complete investigation. The activity was determined to be a **True Positive – Benign** event resulting from authorized security testing. :contentReference[oaicite:0]{index=0}
+An encoded PowerShell command was executed as part of a controlled adversary emulation exercise to validate detection and investigation capabilities. Wazuh successfully detected the activity, generated a high-severity alert, and captured sufficient telemetry to support a complete investigation. The activity was determined to be a **True Positive – Benign** event resulting from authorized security testing.
