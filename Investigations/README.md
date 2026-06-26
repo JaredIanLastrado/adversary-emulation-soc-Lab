@@ -36,7 +36,7 @@ Investigations focus on validating detections, analyzing telemetry, identifying 
 | Case ID | Investigation |
 |----------|----------|
 | Case-007 | SQL Injection Investigation |
-| Case-008 | Command Injection Investigation |
+| Case-008 | Malicious File Upload Investigation |
 | Case-009 | Network Service Discovery Investigation|
 
 ---
