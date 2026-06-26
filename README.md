@@ -1,4 +1,4 @@
-# Adversary Emulation Security Operations Center (AESOC)
+# Adversary Emulation & Security Operations Center (AESOC)
 
 AESOC is a cybersecurity homelab project designed to emulate real-world Security Operations Center (SOC) workflows through centralized monitoring, incident investigation, threat hunting, detection engineering, and adversary simulation.
 
