@@ -61,7 +61,7 @@ The following Discovery commands executed successfully without generating dedica
 - ipconfig.exe
 - systeminfo.exe
 
-As a result, analysts lacked visibility into common Discovery behavior associated with post-compromise reconnaissance.
+As a consequence, analysts could lack proper visibility into common Discovery behavior associated with post-compromise reconnaissance.
 
 ---
 
@@ -173,7 +173,7 @@ Detected executables:
 | Process Creation Visibility | Yes |
 | Discovery Alerting | No |
 | ATT&CK Mapping | No |
-| Analyst Visibility | Limited |
+|Visibility | Limited |
 
 ### After Implementation
 
@@ -182,7 +182,7 @@ Detected executables:
 | Process Creation Visibility | Yes |
 | Discovery Alerting | Yes |
 | ATT&CK Mapping | Yes |
-| Analyst Visibility | Improved |
+|Visibility | Improved |
 
 The custom detection transformed generic Sysmon telemetry into actionable Discovery alerts.
 
@@ -257,7 +257,7 @@ Custom rule successfully generated alerts for whoami.exe, ipconfig.exe, and syst
 - Sysmon Event ID 1 provides valuable process creation telemetry.
 - Telemetry alone does not provide effective detection coverage.
 - Detection engineering transforms raw telemetry into actionable alerts.
-- MITRE ATT&CK mapping improves analyst context during investigations.
+- MITRE ATT&CK mapping improves context during investigations.
 - Custom Wazuh rules can significantly improve visibility into adversary behavior.
 - Discovery activity is commonly observed during post-compromise reconnaissance.
 - Detection gaps should be identified and addressed before they are exploited by attackers.
