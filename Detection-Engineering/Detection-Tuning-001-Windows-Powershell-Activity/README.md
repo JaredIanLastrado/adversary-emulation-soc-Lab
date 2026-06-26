@@ -284,7 +284,7 @@ Although the original Wazuh rule correctly detected executable content being wri
 
 A custom child rule was developed to identify PowerShell Script Policy Test files and reduce their severity from Level 15 to Level 3.
 
-The tuning successfully reduced alert fatigue while preserving analyst visibility, improving overall detection fidelity within the AESOC environment.
+The tuning successfully reduced alert fatigue while preserving visibility, improving overall detection fidelity within the AESOC environment.
 
 This project demonstrated the complete Detection Tuning lifecycle:
 
