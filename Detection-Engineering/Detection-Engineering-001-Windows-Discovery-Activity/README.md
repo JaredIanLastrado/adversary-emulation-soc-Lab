@@ -61,7 +61,7 @@ The following Discovery commands executed successfully without generating dedica
 - ipconfig.exe
 - systeminfo.exe
 
-As a consequence, analysts could lack proper visibility into common Discovery behavior associated with post-compromise reconnaissance.
+As a consequence, The environment lacks proper visibility into common Discovery behavior associated with post-compromise reconnaissance.
 
 ---
 
