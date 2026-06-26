@@ -1,4 +1,4 @@
-# Dashboard 001: Security Onion Network Threat Monitoring Dashboard
+# Security Onion Dashboard 001: Security Onion Network Threat Monitoring Dashboard
 
 ## Objective
 
