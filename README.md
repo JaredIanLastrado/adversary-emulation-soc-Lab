@@ -63,7 +63,7 @@ The result is AESOC (Adversary Emulation Security Operations Center), a personal
 - Build and operate a centralized SOC environment
 - Simulate adversary behavior in a controlled lab
 - Perform end-to-end security investigations
-- Develop and tune security detections
+- Validate and improve detection coverage through custom detection engineering and tuning
 - Conduct threat hunting and log analysis activities
 - Create custom dashboards for security monitoring and visibility
 - Map investigations to the MITRE ATT&CK framework
