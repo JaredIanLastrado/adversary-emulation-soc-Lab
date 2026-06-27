@@ -45,11 +45,14 @@ Investigations focus on validating detections, analyzing telemetry, identifying 
 
 All investigations include:
 
-- Alert Details
-- Telemetry Analysis
-- MITRE ATT&CK Mapping
+- Objective
+- Alert Triage
+- Detection Validation
+- Investigation
 - Findings
+- MITRE ATT&CK Mapping
 - Lessons Learned
+- Conclusion
 
 For the full workflow, see:
 
