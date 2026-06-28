@@ -12,6 +12,16 @@
 * Wazuh SIEM and Security Onion NSM
 * MITRE ATT&CK Mapped Investigations
 
+## Best SOC Work
+
+| Type                     | Cases                                                                                                            | What It Demonstrates                                                                                                                                 |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Detection Engineering    | [Windows Discovery Activity Detection](./Detection-Engineering/Detection-Engineering-001-Windows-Discovery-Activity/) | Identifying a detection gap, validating telemetry, developing a custom Wazuh detection rule, and validating alert generation through testing         |
+| Incident Investigation   | [WinRM Lateral Movement Investigation](./Investigations/Case-003-WinRM-Lateral-Movement/)                             | Correlating Wazuh endpoint telemetry with Security Onion network evidence during a Windows Remote Management (WinRM) lateral movement investigation  |
+| Web Attack Investigation | [SQL Injection Investigation](./Investigations/Case-007-SQL-Injection-Investigation/)                                 | Investigating a web application attack using Security Onion, HTTP request analysis, source attribution, and documented SOC investigation methodology |
+
+These cases demonstrate alert triage, detection validation, incident investigation, MITRE ATT&CK mapping, endpoint and network telemetry correlation, detection engineering, and professional SOC documentation practices.
+
 ## Technologies Used
 
 * Wazuh
