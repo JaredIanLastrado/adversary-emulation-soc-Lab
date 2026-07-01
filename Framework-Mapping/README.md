@@ -8,7 +8,7 @@ The purpose of this section is to show how the AESOC portfolio connects hands-on
 
 | File | Purpose |
 |---|---|
-| [NIST CSF 2.0 Mapping](NIST-CSF-2.0-Mapping.md) | Maps current AESOC lab activities to NIST CSF 2.0 functions |
+| [NIST CSF 2.0 Mapping](NIST-CSF-2.0-Mapping.md) | Maps AESOC lab activities to NIST CSF 2.0 functions |
 | [MITRE ATT&CK Mapping](MITRE-ATTACK-Mapping.md) | Summarizes adversary techniques observed across investigations |
 | [OWASP Mapping](OWASP-Mapping.md) | Maps web application attack investigations to OWASP concepts |
 | [ISO/IEC 27001 Concepts Mapping](ISO-27001-Concepts-Mapping.md) | Connects current lab activities to foundational ISO 27001 control concepts |
