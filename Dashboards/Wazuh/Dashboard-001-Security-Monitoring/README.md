@@ -29,7 +29,7 @@ The AESOC environment generates endpoint telemetry from Windows and Linux system
 
 As the number of investigations, custom detections, and adversary emulation exercises increased, a centralized monitoring dashboard became necessary to improve analyst visibility and streamline alert triage activities.
 
-To address this requirement, a custom Wazuh Security Monitoring Dashboard was developed to provide a single-pane-of-glass view of endpoint security events across the environment. :contentReference[oaicite:0]{index=0}
+To address this requirement, a custom Wazuh Security Monitoring Dashboard was developed to provide a single-pane-of-glass view of endpoint security events across the environment. 
 
 ---
 
