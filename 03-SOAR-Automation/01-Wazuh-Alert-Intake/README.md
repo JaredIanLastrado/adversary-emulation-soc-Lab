@@ -202,7 +202,6 @@ The test confirmed that:
 
 **Validation status: Passed**
 
-Additional validation details are available in the [`Evidence`](Evidence/) directory.
 
 ---
 
