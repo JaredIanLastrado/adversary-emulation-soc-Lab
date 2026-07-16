@@ -1,25 +1,25 @@
 # Adversary Emulation & Security Operations Center (AESOC)
 
-![Lab Architecture](Documentation/01-Lab-Architecture.png)
+![Lab Architecture](01-Lab-Architecture/AESOC-Architecture.png)
 
 ## Portfolio Highlights
 
-* 9 Security Investigations
-* 1 Detection Engineering Project
-* 1 Detection Tuning Project
-* 2 SOC Monitoring Dashboards
-* Windows and Linux Telemetry Analysis
-* Wazuh SIEM and Security Onion NSM
-* MITRE ATT&CK Mapped Investigations
-* NIST CSF 2.0 and GRC Framework Mapping
+- 9 Pre-SOAR Security Investigations
+- 5 Full-Lifecycle Reenactments*
+- Full Alert-to-Resolution Operational Workflow*
+- 3 SOAR Automation Playbooks*
+- Wazuh, Shuffle, TheHive, Zammad, and Slack Integration*
+- Direct SOC Containment and IT Remediation Handoffs*
+- Detection Engineering and Detection Tuning
+- Wazuh and Security Onion Monitoring Dashboards
 
 ## Best SOC Work
 
 | Type                     | Case Study                                                                                                            | What It Demonstrates                                                                                                                                 |
 | ------------------------ | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Detection Engineering    | [Windows Discovery Activity Detection](./Detection-Engineering/Detection-Engineering-001-Windows-Discovery-Activity/) | Identifying a detection gap, validating telemetry, developing a custom Wazuh detection rule, and validating alert generation through testing         |
-| Incident Investigation   | [WinRM Lateral Movement Investigation](./Investigations/Case-003-WinRM-Lateral-Movement/)                             | Correlating Wazuh endpoint telemetry with Security Onion network evidence during a Windows Remote Management (WinRM) lateral movement investigation  |
-| Web Attack Investigation | [SQL Injection Investigation](./Investigations/Case-007-SQL-Injection-Investigation/)                                 | Investigating a web application attack using Security Onion, HTTP request analysis, source attribution, and documented SOC investigation methodology |
+| Detection Engineering    | [Windows Discovery Activity Detection](./05-Detection-Engineering/Custom-Detections/Custom-Detection-001-Windows-Discovery-Activity/) | Identifying a detection gap, validating telemetry, developing a custom Wazuh detection rule, and validating alert generation through testing         |
+| Incident Investigation   | [WinRM Lateral Movement Investigation](./04-Investigations/Pre-SOAR-Investigations/Case-003-WinRM-Lateral-Movement/)                             | Correlating Wazuh endpoint telemetry with Security Onion network evidence during a Windows Remote Management (WinRM) lateral movement investigation  |
+| Web Attack Investigation | [SQL Injection Investigation](./04-Investigations/Pre-SOAR-Investigations/Case-007-SQL-Injection-Investigation/)                                 | Investigating a web application attack using Security Onion, HTTP request analysis, source attribution, and documented SOC investigation methodology |
 
 These case studies demonstrate alert triage, detection validation, incident investigation, MITRE ATT&CK mapping, endpoint and network telemetry correlation, detection engineering, and professional SOC documentation practices.
 
@@ -66,14 +66,15 @@ Detailed mappings are available in the [Framework Mapping](Framework-Mapping/) d
 
 ## Repository Navigation
 
-| Section                                         | Description                                                                                             |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| [Documentation](Documentation/)                 | Lab architecture, telemetry flow, attack simulation flow, and incident response workflow diagrams       |
-| [Investigations](Investigations/)               | Security investigations involving Windows, Linux, web application, authentication, and network activity |
-| [Detection Engineering](Detection-Engineering/) | Custom detection engineering and detection tuning projects                                              |
-| [Dashboards](Dashboards/)                       | Wazuh and Security Onion monitoring dashboards                                                          |
-| [Framework Mapping](Framework-Mapping/)         | NIST CSF 2.0, MITRE ATT&CK, OWASP, ISO/IEC 27001 concepts, and control gap analysis mapping             |
-
+| Section | Description |
+|---|---|
+| [Lab Architecture](01-Lab-Architecture/) | AESOC network architecture, telemetry flow, assets, VLANs, and security stack |
+| [SOC Operations](02-SOC-Operations/) | Alert-to-resolution lifecycle, analyst runbooks, ownership, handoffs, and closure procedures |
+| [SOAR Automation](03-SOAR-Automation/) | Shuffle playbooks integrating Wazuh, TheHive, Zammad, and Slack |
+| [Investigations](04-Investigations/) | Pre-SOAR cases, full-lifecycle reenactments, and new operational investigations |
+| [Detection Engineering](05-Detection-Engineering/) | Detection tuning, custom detections, testing, and validation evidence |
+| [SOC Dashboards](06-SOC-Dashboards/) | Wazuh and Security Onion monitoring dashboards |
+| [Supporting Reference](07-Supporting-Reference/) | Integration guides, framework mapping, ATT&CK mapping, and supporting technical reference |
 ---
 
 AESOC is a cybersecurity homelab project designed to emulate real-world Security Operations Center (SOC) workflows through centralized monitoring, incident investigation, threat hunting, detection engineering, and adversary simulation.
