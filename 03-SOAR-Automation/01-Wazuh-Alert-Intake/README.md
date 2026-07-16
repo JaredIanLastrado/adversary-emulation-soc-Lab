@@ -19,7 +19,7 @@ Shuffle Webhook
        ↓
 Alert Severity Router
        ↓
- ┌───────────────┬───────────────┬
+ ┌───────────────┬───────────────┬───────────────┐
  ↓               ↓               ↓
 Medium 7–11    High 12–14     Critical 15+
  ↓               ↓               ↓
@@ -28,8 +28,8 @@ Created        Created         Created
  ↓               ↓               ↓
 Slack Medium   Slack High      Slack Critical
 Notification   Notification    Notification
-                 ↓
-       Tier 1 Analyst Triage
+       ↓
+Tier 1 Analyst Triage
 ```
 
 ### Implemented Shuffle Workflow
@@ -202,6 +202,7 @@ The test confirmed that:
 
 **Validation status: Passed**
 
+Additional validation details are available in the [`Evidence`](Evidence/) directory.
 
 ---
 
