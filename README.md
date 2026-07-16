@@ -1,6 +1,6 @@
 # Adversary Emulation & Security Operations Center (AESOC)
 
-![Lab Architecture](01-Lab-Architecture/AESOC-Architecture.png)
+![Lab Architecture](01-Lab-Architecture/01-AESOC-Architecture.png)
 
 ## Portfolio Highlights
 
@@ -27,11 +27,13 @@ These case studies demonstrate alert triage, detection validation, incident inve
 
 * Wazuh
 * Security Onion
+* Shuffle
+* TheHive
 * Sysmon
 * Auditd
 * Suricata
 * Zeek
-* Windows Server 2022
+* Windows Server 2025
 * Windows 10
 * Rocky Linux
 * OPNsense
@@ -62,7 +64,7 @@ AESOC includes framework mapping to connect hands-on SOC lab work to security op
 | ISO/IEC 27001 Concepts | Mapped current lab activities to foundational concepts such as logging, monitoring, access control, incident management, evidence collection, and continuous improvement |
 | Control Gap Analysis   | Identified detection and monitoring gaps based on available telemetry and investigation evidence                                                                         |
 
-Detailed mappings are available in the [Framework Mapping](Framework-Mapping/) directory.
+Detailed mappings are available in the [Framework Mapping](07-Supporting-Reference/Framework-and-Control-Mapping/) directory.
 
 ## Repository Navigation
 
