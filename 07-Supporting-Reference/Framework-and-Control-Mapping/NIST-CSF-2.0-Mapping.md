@@ -6,7 +6,7 @@ This document maps current AESOC lab activities to the NIST Cybersecurity Framew
 
 | NIST CSF 2.0 Function | AESOC Activity | Evidence in Repository | What Was Produced |
 |---|---|---|---|
-| Govern | Documented the purpose, scope, methodology, and structure of the AESOC lab | Root README, Documentation folder, investigation methodology | Project documentation, SOC workflow structure, framework mapping |
+| Govern | Documented the purpose, scope, methodology, and structure of the AESOC lab | Root README, Lab Architecture, SOC Operations, and investigation methodology | Project documentation, SOC workflow structure, and framework mapping |
 | Identify | Documented lab assets, monitored endpoints, telemetry sources, network segments, and security tools | Lab Architecture Diagram, Telemetry Flow Diagram, Environment Overview | Asset and environment understanding through diagrams and documentation |
 | Protect | Designed a segmented lab environment using OPNsense, VLANs, Active Directory, endpoint agents, and separated monitoring systems | Architecture documentation, telemetry flow documentation, AD/Wazuh/Security Onion environment | Segmented lab design and controlled monitoring architecture |
 | Detect | Collected and analyzed endpoint and network telemetry using Wazuh, Security Onion, Sysmon, Auditd, Suricata, and Zeek | 9 investigations, Wazuh dashboard, Security Onion dashboard | Alert evidence, dashboard visibility, detection validation |
