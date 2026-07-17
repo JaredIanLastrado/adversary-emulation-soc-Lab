@@ -298,7 +298,7 @@ Security Onion generated multiple correlated ET SCAN alerts identifying attempts
 
 Investigation correlated the generated alerts and reconstructed the reconnaissance timeline, identifying the targeted services and confirming source and destination attribution.
 
-![Investigation](Screenshots/03-Investigation.png)
+![Related Events](Screenshots/03-Related-Events.png)
 
 ---
 
