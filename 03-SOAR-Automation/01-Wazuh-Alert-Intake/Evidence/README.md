@@ -24,3 +24,4 @@ High-Severity Conditions Matched
 TheHive Alert Created
         ↓
 Slack Notification Delivered
+```
