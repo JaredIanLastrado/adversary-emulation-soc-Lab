@@ -628,7 +628,7 @@ Security Onion successfully detected the upload and generated a Suricata alert i
 
 
 
-![Detection Validation](Screenshots/02-Detection-Validaton.png)
+![Detection Validation](Screenshots/02-Detection-Validation.png)
 
 
 
