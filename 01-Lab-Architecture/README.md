@@ -170,10 +170,6 @@ The network design follows these principles:
 - Only required monitoring, administration, and integration traffic is permitted.
 - The portable Internet gateway remains separated from the internal AESOC VLAN structure.
 
-For a standalone version of this section, see:
-
-[Network and VLAN Overview](Network-and-VLAN-Overview.md)
-
 ---
 
 # Telemetry Flow
@@ -357,11 +353,7 @@ The following matrix identifies the major AESOC assets, the telemetry they gener
 - TheHive is the primary alert and investigation system of record.
 - Zammad records work assigned to Detection Engineering or IT/Remediation.
 - Slack is used for visibility and notification rather than formal recordkeeping.
-
-For a standalone version of this section, see:
-
-[Asset and Telemetry Matrix](Asset-and-Telemetry-Matrix.md)
-
+  
 ---
 
 # Attack Simulation Flow
@@ -621,10 +613,6 @@ Network Alerts and Investigation Data
 | Investigation and response | Tier 2 SOC Analyst |
 | Detection-rule review | Detection Engineering |
 | Infrastructure changes | IT/Remediation |
-
-For a standalone version of this section, see:
-
-[Security Stack](Security-Stack.md)
 
 ---
 
