@@ -1,157 +1,235 @@
 # Adversary Emulation & Security Operations Center (AESOC)
 
-![Lab Architecture](01-Lab-Architecture/01-AESOC-Architecture.png)
+AESOC is a portable, segmented cybersecurity home lab built to demonstrate practical entry-level SOC analyst skills.
 
-## Portfolio Highlights
+The environment combines endpoint and network monitoring, alert triage, investigation, detection engineering, SOAR automation, case management, ticketing, and controlled adversary simulation.
 
-- 9 Pre-SOAR Security Investigations
-- 5 Full-Lifecycle Reenactments*
-- Full Alert-to-Resolution Operational Workflow*
-- 3 SOAR Automation Playbooks*
-- Wazuh, Shuffle, TheHive, Zammad, and Slack Integration*
-- Direct SOC Containment and IT Remediation Handoffs*
-- Detection Engineering and Detection Tuning
-- Wazuh and Security Onion Monitoring Dashboards
+[![AESOC Lab Architecture](01-Lab-Architecture/AESOC-Architecture.png)](01-Lab-Architecture/AESOC-Architecture.png)
 
-## Best SOC Work
+[Open the architecture diagram at full size](01-Lab-Architecture/AESOC-Architecture.png)
 
-| Type                     | Case Study                                                                                                            | What It Demonstrates                                                                                                                                 |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Detection Engineering    | [Windows Discovery Activity Detection](./05-Detection-Engineering/Custom-Detections/Custom-Detection-001-Windows-Discovery-Activity/) | Identifying a detection gap, validating telemetry, developing a custom Wazuh detection rule, and validating alert generation through testing         |
-| Incident Investigation   | [WinRM Lateral Movement Investigation](./04-Investigations/01-Pre-SOAR-Investigations/Case-003-WinRM-Lateral-Movement/)                             | Correlating Wazuh endpoint telemetry with Security Onion network evidence during a Windows Remote Management (WinRM) lateral movement investigation  |
-| Web Attack Investigation | [SQL Injection Investigation](./04-Investigations/01-Pre-SOAR-Investigations/Case-007-SQL-Injection-Investigation/)                                 | Investigating a web application attack using Security Onion, HTTP request analysis, source attribution, and documented SOC investigation methodology |
+---
 
-These case studies demonstrate alert triage, detection validation, incident investigation, MITRE ATT&CK mapping, endpoint and network telemetry correlation, detection engineering, and professional SOC documentation practices.
+## Portfolio Overview
 
-## Technologies Used
+| Area | Current implementation |
+|---|---|
+| Security investigations | 9 documented pre-SOAR investigations |
+| SOAR automation | 3 validated Shuffle playbooks |
+| SOC operations | Alert-to-resolution workflow, Tier 1 and Tier 2 runbooks, handoffs, and closure checklist |
+| Detection engineering | 1 custom Wazuh detection and 1 detection-tuning project |
+| Security monitoring | 1 Wazuh dashboard and 1 Security Onion dashboard |
+| Case management | TheHive alert and case lifecycle |
+| Ticketing | Zammad Detection Engineering and Infrastructure Remediation workflows |
+| Notifications | Slack alert, case, and ticket channels |
+| Framework mapping | MITRE ATT&CK, NIST CSF 2.0, OWASP, ISO/IEC 27001 concepts, and control-gap analysis |
 
-* Wazuh
-* Security Onion
-* Shuffle
-* TheHive
-* Sysmon
-* Auditd
-* Suricata
-* Zeek
-* Windows Server 2025
-* Windows 10
-* Rocky Linux
-* OPNsense
-* Proxmox VE
+> **Project scope:** AESOC is a controlled home-lab environment. Cases, tickets, comments, assignments, and notification messages used to validate the automation are test payloads and do not represent production incidents.
 
-## Skills Demonstrated
+---
 
-* Security Monitoring
-* Incident Investigation
-* Threat Hunting
-* Detection Engineering
-* Detection Tuning
-* Network Security Monitoring
-* SIEM Analysis
-* Log Analysis
-* MITRE ATT&CK Mapping
-* Dashboard Development
+## Alert-to-Resolution Workflow
 
-## Cybersecurity Frameworks
+```text
+Endpoint Activity
+        ↓
+Wazuh Detection
+        ↓
+Shuffle Alert Intake
+        ↓
+TheHive Alert + Slack Notification
+        ↓
+Tier 1 Alert Triage
+   ┌────┴───────────────┐
+   ↓                    ↓
+Close Alert       Escalate to Case
+                         ↓
+                Tier 2 Investigation
+             ┌───────────┼────────────┐
+             ↓           ↓            ↓
+       Direct SOC    Detection    Infrastructure
+         Action       Review       Remediation
+             ↓           ↓            ↓
+         Validate     Zammad        Zammad
+          Result       Ticket         Ticket
+                          └────┬───────┘
+                               ↓
+                    Ticket Closure Handback
+                               ↓
+                       TheHive Case Update
+                               ↓
+                        Tier 2 Validation
+                               ↓
+                         Final Case Closure
+```
 
-AESOC includes framework mapping to connect hands-on SOC lab work to security operations, control validation, incident response, detection engineering, and risk management concepts.
+TheHive is the primary alert and investigation record. Zammad tracks work assigned to Detection Engineering or Infrastructure Remediation. Slack provides lifecycle visibility but is not treated as the official investigation record.
 
-| Framework / Concept    | How It Is Used                                                                                                                                                           |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| NIST CSF 2.0           | Mapped current lab activities to Govern, Identify, Protect, Detect, Respond, and Recover functions                                                                       |
-| MITRE ATT&CK           | Mapped observed adversary behaviors to tactics and techniques across investigations                                                                                      |
-| OWASP                  | Applied web application security concepts to SQL injection and malicious file upload investigations                                                                      |
-| ISO/IEC 27001 Concepts | Mapped current lab activities to foundational concepts such as logging, monitoring, access control, incident management, evidence collection, and continuous improvement |
-| Control Gap Analysis   | Identified detection and monitoring gaps based on available telemetry and investigation evidence                                                                         |
+Security Onion provides a separate network-monitoring path. Its alerts are currently reviewed within Security Onion and are not yet forwarded into the documented Shuffle automation.
 
-Detailed mappings are available in the [Framework Mapping](07-Supporting-Reference/Framework-and-Control-Mapping/) directory.
+---
+
+## Featured Work
+
+| Project | What it demonstrates |
+|---|---|
+| [SOC Operations](02-SOC-Operations/) | Tier 1 triage, Tier 2 investigation, response paths, ownership, handoffs, validation, and case closure |
+| [Wazuh Alert Intake](03-SOAR-Automation/01-Wazuh-Alert-Intake/) | Wazuh webhook ingestion, severity routing, TheHive alert creation, and Slack notification |
+| [Case Updates and Ticket Routing](03-SOAR-Automation/02-Case-Updates-and-Ticket-Routing/) | TheHive lifecycle events, tag-based routing, Zammad ticket creation, and duplicate prevention |
+| [Ticket Closure Handback](03-SOAR-Automation/03-Ticket-Closure-Handback/) | Zammad closure processing, TheHive synchronization, and Tier 2 handback |
+| [WinRM Lateral Movement](04-Investigations/01-Pre-SOAR-Investigations/Case-003-WinRM-Lateral-Movement/) | Correlation of Wazuh endpoint telemetry with Security Onion network evidence |
+| [Windows Discovery Custom Detection](05-Detection-Engineering/Custom-Detections/Custom-Detection-001-Windows-Discovery-Activity/) | Detection-gap analysis, Wazuh rule development, testing, and validation |
+| [PowerShell Detection Tuning](05-Detection-Engineering/Detection-Tuning/Detection-Tuning-001-Windows-PowerShell-Activity/) | False-positive analysis, severity tuning, and post-change validation |
+| [Wazuh Security Monitoring Dashboard](06-SOC-Dashboards/Wazuh/Dashboard-001-Security-Monitoring/) | Endpoint alert and security-event visualization |
+| [Security Onion Network Threat Dashboard](06-SOC-Dashboards/Security-Onion/Dashboard-001-Network-Threat-Monitoring/) | Network alert, protocol, and connection visibility |
+
+---
 
 ## Repository Navigation
 
-| Section | Description |
+| Section | Contents |
 |---|---|
-| [Lab Architecture](01-Lab-Architecture/) | AESOC network architecture, telemetry flow, assets, VLANs, and security stack |
-| [SOC Operations](02-SOC-Operations/) | Alert-to-resolution lifecycle, analyst runbooks, ownership, handoffs, and closure procedures |
-| [SOAR Automation](03-SOAR-Automation/) | Shuffle playbooks integrating Wazuh, TheHive, Zammad, and Slack |
-| [Investigations](04-Investigations/) | Pre-SOAR cases, full-lifecycle reenactments, and new operational investigations |
-| [Detection Engineering](05-Detection-Engineering/) | Detection tuning, custom detections, testing, and validation evidence |
-| [SOC Dashboards](06-SOC-Dashboards/) | Wazuh and Security Onion monitoring dashboards |
-| [Supporting Reference](07-Supporting-Reference/) | Integration guides, framework mapping, ATT&CK mapping, and supporting technical reference |
----
-
-AESOC is a cybersecurity homelab project designed to emulate real-world Security Operations Center (SOC) workflows through centralized monitoring, incident investigation, threat hunting, detection engineering, and adversary simulation.
-
-The project focuses on incident investigation, threat hunting, detection engineering, alert tuning, dashboard development, framework mapping, and MITRE ATT&CK-mapped adversary emulation activities.
+| [01 – Lab Architecture](01-Lab-Architecture/) | Physical and logical architecture, VLANs, telemetry flow, assets, and security stack |
+| [02 – SOC Operations](02-SOC-Operations/) | Alert lifecycle, ownership, Tier 1 and Tier 2 runbooks, and closure procedures |
+| [03 – SOAR Automation](03-SOAR-Automation/) | Three validated Shuffle workflows with implementation evidence |
+| [04 – Investigations](04-Investigations/01-Pre-SOAR-Investigations/) | Nine documented endpoint, authentication, Linux, web, and network investigations |
+| [05 – Detection Engineering](05-Detection-Engineering/) | Custom detections, detection tuning, testing, and validation |
+| [06 – SOC Dashboards](06-SOC-Dashboards/) | Wazuh and Security Onion monitoring dashboards |
+| [Integration References](07-Supporting-Reference/Integrations/) | Wazuh, Shuffle, TheHive, Zammad, and Slack integration summaries |
+| [Framework and Control Mapping](07-Supporting-Reference/Framework-and-Control-Mapping/) | MITRE ATT&CK, NIST CSF, OWASP, ISO concepts, and control gaps |
 
 ---
 
-## Project Origin
+## Investigation Coverage
 
-While completing The Ohio State University's Cybersecurity Bootcamp, I became increasingly interested in the technologies and infrastructure used to support the program's hands-on security exercises. Beyond completing the labs, I wanted to understand how the underlying systems generated telemetry, collected logs, detected attacks, and enabled analysts to investigate security events.
+### Windows and Active Directory
 
-After completing the program, I set out to build my own Security Operations Center environment from the ground up. The goal was not only to recreate many of the concepts explored during the bootcamp, but also to gain practical experience deploying enterprise security tools, engineering detections, investigating alerts, and documenting the full analyst workflow.
+- PowerShell encoded-command execution
+- Registry Run Key persistence
+- WinRM lateral movement
+- NTLM authentication activity
 
-The result is AESOC (Adversary Emulation & Security Operations Center), a personal SOC environment designed to emulate real-world security operations through centralized monitoring, incident investigation, detection engineering, adversary simulation, and network security analysis. The environment integrates Windows, Linux, web application, and network telemetry to provide hands-on experience with the technologies and workflows commonly used by Security Operations Center (SOC) analysts.
+### Linux
+
+- Sudo privilege activity
+- SSH authentication activity
+
+### Network and Web Applications
+
+- SQL injection
+- Malicious file upload
+- Network service discovery
+
+The original nine cases are retained as **Pre-SOAR Investigations** because they were completed before implementation of the full Shuffle, TheHive, Zammad, and Slack lifecycle.
+
+Selected cases will later be repeated or extended through the complete operational workflow under Full-Lifecycle Investigations.
 
 ---
 
-## Core Objectives
+## Detection Engineering
 
-* Build and operate a centralized SOC environment
-* Simulate adversary behavior in a controlled lab
-* Perform end-to-end security investigations
-* Validate and improve detection coverage through custom detection engineering and tuning
-* Conduct threat hunting and log analysis activities
-* Create custom dashboards for security monitoring and visibility
-* Map investigations to the MITRE ATT&CK framework
-* Map current lab activities to cybersecurity frameworks and control concepts
-* Document findings using structured SOC reporting practices
+AESOC currently includes two completed detection projects:
+
+### Custom Detection
+
+[Windows Discovery Activity Detection](05-Detection-Engineering/Custom-Detections/Custom-Detection-001-Windows-Discovery-Activity/)
+
+- Identified a Wazuh detection gap
+- Confirmed that the required telemetry was available
+- Developed a custom Wazuh rule
+- Generated controlled test activity
+- Validated successful alert generation
+
+### Detection Tuning
+
+[PowerShell Script Policy Test Reclassification](05-Detection-Engineering/Detection-Tuning/Detection-Tuning-001-Windows-PowerShell-Activity/)
+
+- Investigated repeated high-severity alerts
+- Confirmed legitimate PowerShell behavior
+- Created a child rule to reduce severity
+- Preserved event visibility
+- Retested and validated the tuning result
 
 ---
 
-## Environment Overview
+## Security Stack
 
-### Physical Infrastructure
+### Infrastructure and Segmentation
 
-| Device           | Purpose                                        |
-| ---------------- | ---------------------------------------------- |
-| Beelink SER5 Pro | Proxmox virtualization host                    |
-| Beelink EQi12    | OPNsense firewall and network security gateway |
-| Netgear GS108TV3 | VLAN-capable managed switch                    |
+- Raspberry Pi portable Internet gateway
+- OPNsense firewall and inter-VLAN routing
+- Netgear GS108Tv3 managed switch
+- Proxmox VE virtualization
+- Dedicated Management, Active Directory, Quarantine, DMZ, and Security VLANs
 
-### Virtual Infrastructure
+### Detection and Monitoring
 
-| System              | Purpose                                                    |
-| ------------------- | ---------------------------------------------------------- |
-| Proxmox VE          | Virtualization platform                                    |
-| Windows Server 2022 | Active Directory Domain Controller                         |
-| Windows 10          | User endpoint                                              |
-| Rocky Linux         | Linux endpoint                                             |
-| Wazuh               | SIEM and endpoint monitoring                               |
-| Security Onion      | Network Security Monitoring (NSM)                          |
-| DVWA                | Vulnerable web application for attack simulation           |
-| SO-IDH              | Honeypot used for intrusion detection and alert generation |
+- Wazuh
+- Security Onion
+- Sysmon
+- Windows Event Logs
+- Auditd
+- Syslog
+- Suricata
+- Zeek
 
-### Security Tooling
+### Security Operations
 
-* Wazuh
-* Security Onion
-* OPNsense
-* Sysmon
-* Auditd
-* Suricata
-* Zeek
+- Shuffle SOAR
+- TheHive
+- Zammad
+- Slack
+- Wazuh dashboards
+- Security Onion dashboards
 
-### Security Operations Capabilities
+### Monitored and Test Systems
 
-* Endpoint Monitoring
-* Network Security Monitoring
-* Log Analysis
-* Incident Investigation
-* Threat Hunting
-* Detection Engineering
-* Detection Tuning
-* Security Dashboard Development
-* MITRE ATT&CK Mapping
-* NIST CSF 2.0 Mapping
-* Control Gap Analysis
+- Windows Server 2025 domain controller
+- Windows 10 endpoint
+- Rocky Linux endpoint
+- DVWA
+- Security Onion Intrusion Detection Honeypot
+- Quarantine network
+
+---
+
+## Skills Demonstrated
+
+- Alert triage
+- Endpoint and network investigation
+- SIEM and NSM analysis
+- Log and event correlation
+- MITRE ATT&CK mapping
+- Detection engineering
+- Detection tuning
+- SOAR workflow development
+- Case and ticket lifecycle management
+- Analyst ownership and handoffs
+- Dashboard development
+- Technical documentation
+- Network segmentation
+- Controlled adversary simulation
+
+---
+
+## Framework and Control Mapping
+
+AESOC documentation connects completed lab work to:
+
+- MITRE ATT&CK
+- NIST Cybersecurity Framework 2.0
+- OWASP concepts
+- ISO/IEC 27001 concepts
+- Detection and monitoring control-gap analysis
+
+These mappings describe how the implemented technical work relates to broader security operations and risk-management concepts. They do not claim formal organizational compliance or certification.
+
+[Review the framework mappings](07-Supporting-Reference/Framework-and-Control-Mapping/)
+
+---
+
+## Project Background
+
+AESOC began after completing The Ohio State University Cybersecurity Bootcamp. I wanted to understand not only how to perform individual security exercises, but also how the surrounding infrastructure collects telemetry, generates detections, supports investigations, and moves security work through an operational lifecycle.
+
+The result is a personally designed and operated SOC lab that combines Windows, Linux, web-application, and network telemetry with detection, investigation, automation, and documentation.
