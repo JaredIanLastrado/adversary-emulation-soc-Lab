@@ -1,4 +1,4 @@
-# Case-009: Network Service Discovery Threat Hunt
+# Case-009: Network Service Discovery Investigation
 
 ## Objective
 
