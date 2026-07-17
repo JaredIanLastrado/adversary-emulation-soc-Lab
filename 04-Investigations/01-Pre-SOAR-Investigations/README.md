@@ -54,6 +54,10 @@ All investigations include:
 - Lessons Learned
 - Conclusion
 
-For the full workflow, see:
+## Pre-SOAR Investigation Workflow
 
-[Incident Response Workflow](../Documentation/04-Incident-Response-Workflow.png)
+The following diagram represents the investigation process used before the implementation of Shuffle, TheHive, Zammad, and the full alert-to-resolution lifecycle.
+
+[![Pre-SOAR Investigation Workflow](Pre-SOAR-Investigation-Workflow.png)](Pre-SOAR-Investigation-Workflow.png)
+
+[Open the workflow diagram at full size](Pre-SOAR-Investigation-Workflow.png)
