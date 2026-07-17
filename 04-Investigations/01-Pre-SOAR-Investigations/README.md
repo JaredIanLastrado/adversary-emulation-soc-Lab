@@ -1,4 +1,4 @@
-# Security Investigations
+# Pre-SOAR Security Investigations
 
 This section contains documented security investigations performed within the AESOC environment.
 
@@ -37,7 +37,7 @@ Investigations focus on validating detections, analyzing telemetry, identifying 
 |----------|----------|
 | Case-007 | SQL Injection Investigation |
 | Case-008 | Malicious File Upload Investigation |
-| Case-009 | Network Service Discovery Investigation|
+| Case-009 | Network Service Discovery Investigation |
 
 ---
 
