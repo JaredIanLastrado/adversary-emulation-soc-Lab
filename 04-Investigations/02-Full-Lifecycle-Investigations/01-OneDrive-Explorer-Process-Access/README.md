@@ -45,7 +45,7 @@ process-access event.
 | Granted access | 0x101411 |
 | MITRE mapping | T1055 — Process Injection |
 
-![Wazuh core process-access fields](Evidence/Alert-Intake/02-Wazuh-ProcessAccess-Core-Fields.png)
+![Wazuh core process-access fields](00-Alert-Intake/02-Wazuh-ProcessAccess-Core-Fields.png)
 
 The call trace contained expected OneDrive FileSync components:
 
@@ -53,10 +53,10 @@ The call trace contained expected OneDrive FileSync components:
 - FileSyncEvents.dll
 - FileSyncHost.DLL
 
-![OneDrive process-access call trace](Evidence/Alert-Intake/03-Wazuh-ProcessAccess-CallTrace.png)
+![OneDrive process-access call trace](00-Alert-Intake/03-Wazuh-ProcessAccess-CallTrace.png)
 
 The complete alert is available as
-[raw JSON](Evidence/Alert-Intake/01-Raw-Wazuh-Alert-1783532403.27005643.json).
+[raw JSON](00-Alert-Intake/01-Raw-Wazuh-Alert-1783532403.27005643.json).
 
 ---
 
