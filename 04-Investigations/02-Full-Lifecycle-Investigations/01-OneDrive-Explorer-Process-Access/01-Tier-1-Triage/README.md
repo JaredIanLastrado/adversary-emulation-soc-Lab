@@ -28,6 +28,6 @@ for Tier 2 review.
 
 ## Triage Findings and Handoff
 
-![Tier 1 investigation findings and handoff](Evidence/05-TheHive-Tier1-Triage-and-Handoff.png)
+![Tier 1 investigation findings and handoff](Evidence/05-TheHive-Tier1-Triage-&-Handoff.png)
 
 [Return to the full investigation](../)
