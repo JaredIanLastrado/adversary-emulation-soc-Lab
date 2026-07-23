@@ -74,7 +74,7 @@ Tier 1 assessed the activity as likely benign application behavior.
 No containment was required, but the alert was promoted to TheHive
 Case 18 for Tier 2 detection-quality review.
 
-![Tier 1 disposition and Tier 2 handoff](01-Tier-1-Triage/Evidence/05-TheHive-Tier1-Triage-and-Handoff.png)
+![Tier 1 disposition and Tier 2 handoff](01-Tier-1-Triage/Evidence/05-TheHive-Tier1-Triage-&-Handoff.png)
 
 [View the Tier 1 deep dive](01-Tier-1-Triage/)
 
