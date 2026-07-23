@@ -18,8 +18,6 @@ identified.
 
 ![Tier 2 scope-review comment](Evidence/10-Tier2-Scope-Review-Comment.png)
 
-[View the repeatable environment-wide queries](Tier-2-Environment-Query.md)
-
 ## Binary Validation
 
 The installed executable used the expected Microsoft OneDrive path and
