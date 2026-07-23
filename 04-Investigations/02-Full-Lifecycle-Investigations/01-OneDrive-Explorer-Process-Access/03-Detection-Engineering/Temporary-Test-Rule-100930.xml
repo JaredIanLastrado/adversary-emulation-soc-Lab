@@ -1,0 +1,23 @@
+<group name="aesoc_rule_testing,">
+
+  <rule id="100930" level="5">
+    <decoded_as>json</decoded_as>
+
+    <field name="win.system.eventID" type="pcre2">^10$</field>
+
+    <field name="win.eventdata.targetImage" type="pcre2">(?i)^C:\\Windows\\Explorer\.EXE$</field>
+
+    <field name="win.eventdata.sourceImage" type="pcre2">(?i)^C:\\Users\\[^\\]+\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive\.exe$</field>
+
+    <field name="win.eventdata.grantedAccess" type="pcre2">^0x101411$</field>
+
+    <field name="win.eventdata.callTrace" type="pcre2">(?i)\\Microsoft\\OneDrive\\[^\\]+\\FileSyncClient\.dll</field>
+
+    <field name="win.eventdata.callTrace" type="pcre2">(?i)\\Microsoft\\OneDrive\\[^\\]+\\FileSyncEvents\.dll</field>
+
+    <field name="win.eventdata.callTrace" type="pcre2">(?i)\\Microsoft\\OneDrive\\[^\\]+\\FileSyncHost\.dll</field>
+
+    <description>TEST ONLY - All OneDrive tuning conditions passed</description>
+  </rule>
+
+</group>

@@ -1,0 +1,23 @@
+<group name="windows,sysmon,sysmon_eid10_detections,aesoc_detection_tuning,">
+
+  <rule id="100929" level="3">
+    <if_sid>92910</if_sid>
+
+    <field name="win.eventdata.sourceImage" type="pcre2">(?i)^C:\\Users\\[^\\]+\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive\.exe$</field>
+
+    <field name="win.eventdata.grantedAccess" type="pcre2">^0x101411$</field>
+
+    <field name="win.eventdata.callTrace" type="pcre2">(?i)\\Microsoft\\OneDrive\\[^\\]+\\FileSyncClient\.dll</field>
+
+    <field name="win.eventdata.callTrace" type="pcre2">(?i)\\Microsoft\\OneDrive\\[^\\]+\\FileSyncEvents\.dll</field>
+
+    <field name="win.eventdata.callTrace" type="pcre2">(?i)\\Microsoft\\OneDrive\\[^\\]+\\FileSyncHost\.dll</field>
+
+    <description>Expected Microsoft OneDrive access to Explorer.exe - downgraded after detection review</description>
+
+    <options>no_full_log</options>
+
+    <group>expected_application_behavior,onedrive,detection_tuning,</group>
+  </rule>
+
+</group>
