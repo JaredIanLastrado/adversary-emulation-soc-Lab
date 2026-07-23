@@ -1,3 +1,13 @@
+<!--
+Proposed detection-tuning rule.
+
+The matching conditions passed controlled testing, but live validation
+failed because Rule 100929 did not supersede built-in Rule 92910 during
+Windows EventChannel processing.
+
+This rule was not retained as a validated production change.
+-->
+
 <group name="windows,sysmon,sysmon_eid10_detections,aesoc_detection_tuning,">
 
   <rule id="100929" level="3">
@@ -5,13 +15,13 @@
 
     <field name="win.eventdata.sourceImage" type="pcre2">(?i)^C:\\Users\\[^\\]+\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive\.exe$</field>
 
-    <field name="win.eventdata.grantedAccess" type="pcre2">^0x101411$</field>
+    <field name="win.eventdata.grantedAccess" type="pcre2">(?i)^0x101411$</field>
 
     <field name="win.eventdata.callTrace" type="pcre2">(?i)\\Microsoft\\OneDrive\\[^\\]+\\FileSyncClient\.dll</field>
 
     <field name="win.eventdata.callTrace" type="pcre2">(?i)\\Microsoft\\OneDrive\\[^\\]+\\FileSyncEvents\.dll</field>
 
-    <field name="win.eventdata.callTrace" type="pcre2">(?i)\\Microsoft\\OneDrive\\[^\\]+\\FileSyncHost\.dll</field>
+    <field name="win.eventdata.callTrace" type="pcre2">(?i)\\Microsoft\\OneDrive\\[^\\]+\\FileSyncHost\.DLL</field>
 
     <description>Expected Microsoft OneDrive access to Explorer.exe - downgraded after detection review</description>
 
