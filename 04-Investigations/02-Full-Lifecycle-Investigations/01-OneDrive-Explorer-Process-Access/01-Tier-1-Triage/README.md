@@ -24,8 +24,6 @@ for Tier 2 review.
 
 ![Tier 1 alert-frequency review](Evidence/04-Wazuh-OneDrive-Alert-Frequency.png)
 
-[View the repeatable frequency query](Tier-1-Frequency-Query.md)
-
 ## Triage Findings and Handoff
 
 ![Tier 1 investigation findings and handoff](Evidence/05-TheHive-Tier1-Triage-&-Handoff.png)
