@@ -36,7 +36,7 @@ OSINT/WHOIS, Nmap, Nessus, Metasploit, SSH, Linux, Windows, Apache Tomcat, Apach
 
 ## Report
 
-- [View the portfolio-edition penetration test report](./Jared_Lastrado_Rekall_Penetration_Test_Report.pdf)
+- [View the portfolio-edition penetration test report](./Rekall_Penetration_Test_Report.pdf)
 
 The editable DOCX is retained for future revisions but the PDF should be the primary file linked from the portfolio.
 
