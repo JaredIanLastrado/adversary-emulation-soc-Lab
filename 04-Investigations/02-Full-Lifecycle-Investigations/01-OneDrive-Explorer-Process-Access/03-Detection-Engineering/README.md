@@ -44,10 +44,7 @@ independently of the live Windows EventChannel parent-rule chain.
 ![Positive controlled test](Evidence/15-Controlled-Test-Positive-Phase3.png)
 
 Supporting artifacts:
-
-- [Controlled test results](Rule-Test-Results.md)
 - [Test-input payloads](Test-Inputs/)
-- [Wazuh manager version](Wazuh-Manager-Version.txt)
 
 ## Live Validation
 
