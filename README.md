@@ -14,10 +14,10 @@ The environment combines endpoint and network monitoring, alert triage, investig
 
 | Area | Current implementation |
 |---|---|
-| Security investigations | 9 documented pre-SOAR investigations |
+| Security investigations | 9 pre-SOAR investigations and 1 completed full-lifecycle investigation |
 | SOAR automation | 3 validated Shuffle playbooks |
 | SOC operations | Alert-to-resolution workflow, Tier 1 and Tier 2 runbooks, handoffs, and closure checklist |
-| Detection engineering | 1 custom Wazuh detection and 1 detection-tuning project |
+| Detection engineering | 1 custom Wazuh detection, 1 validated tuning project, and 1 deferred tuning review |
 | Security monitoring | 1 Wazuh dashboard and 1 Security Onion dashboard |
 | Case management | TheHive alert and case lifecycle |
 | Ticketing | Zammad Detection Engineering and Infrastructure Remediation workflows |
@@ -74,6 +74,7 @@ Security Onion provides a separate network-monitoring path. Its alerts are curre
 | Project | What it demonstrates |
 |---|---|
 | [SOC Operations](02-SOC-Operations/) | Tier 1 triage, Tier 2 investigation, response paths, ownership, handoffs, validation, and case closure |
+| [OneDrive-to-Explorer Full-Lifecycle Investigation](04-Investigations/02-Full-Lifecycle-Investigations/01-OneDrive-Explorer-Process-Access/) | Wazuh alert intake, Tier 1 and Tier 2 analysis, Detection Engineering handoff, controlled rule testing, ticket closure, and final case disposition |
 | [Wazuh Alert Intake](03-SOAR-Automation/01-Wazuh-Alert-Intake/) | Wazuh webhook ingestion, severity routing, TheHive alert creation, and Slack notification |
 | [Case Updates and Ticket Routing](03-SOAR-Automation/02-Case-Updates-and-Ticket-Routing/) | TheHive lifecycle events, tag-based routing, Zammad ticket creation, and duplicate prevention |
 | [Ticket Closure Handback](03-SOAR-Automation/03-Ticket-Closure-Handback/) | Zammad closure processing, TheHive synchronization, and Tier 2 handback |
@@ -92,7 +93,7 @@ Security Onion provides a separate network-monitoring path. Its alerts are curre
 | [01 – Lab Architecture](01-Lab-Architecture/) | Physical and logical architecture, VLANs, telemetry flow, assets, and security stack |
 | [02 – SOC Operations](02-SOC-Operations/) | Alert lifecycle, ownership, Tier 1 and Tier 2 runbooks, and closure procedures |
 | [03 – SOAR Automation](03-SOAR-Automation/) | Three validated Shuffle workflows with implementation evidence |
-| [04 – Investigations](04-Investigations/01-Pre-SOAR-Investigations/) | Nine documented endpoint, authentication, Linux, web, and network investigations |
+| [04 – Investigations](04-Investigations/) | Nine pre-SOAR investigations and one completed full alert-to-resolution lifecycle investigation |
 | [05 – Detection Engineering](05-Detection-Engineering/) | Custom detections, detection tuning, testing, and validation |
 | [06 – SOC Dashboards](06-SOC-Dashboards/) | Wazuh and Security Onion monitoring dashboards |
 | [Integration References](07-Supporting-Reference/Integrations/) | Wazuh, Shuffle, TheHive, Zammad, and Slack integration summaries |
@@ -122,13 +123,17 @@ Security Onion provides a separate network-monitoring path. Its alerts are curre
 
 The original nine cases are retained as **Pre-SOAR Investigations** because they were completed before implementation of the full Shuffle, TheHive, Zammad, and Slack lifecycle.
 
-Selected cases will later be repeated or extended through the complete operational workflow under Full-Lifecycle Investigations.
+### Full-Lifecycle Investigation
+
+- [OneDrive.exe Access to Explorer.exe](04-Investigations/02-Full-Lifecycle-Investigations/01-OneDrive-Explorer-Process-Access/) — Wazuh alert intake, Tier 1 triage, Tier 2 investigation, Detection Engineering handoff, Zammad ticket closure, TheHive handback, and final case closure
+
+Additional cases may be repeated or extended through the same operational workflow as the lab develops.
 
 ---
 
 ## Detection Engineering
 
-AESOC currently includes two completed detection projects:
+AESOC currently includes two completed detection projects and one full-lifecycle detection review:
 
 ### Custom Detection
 
@@ -149,6 +154,16 @@ AESOC currently includes two completed detection projects:
 - Created a child rule to reduce severity
 - Preserved event visibility
 - Retested and validated the tuning result
+
+### Full-Lifecycle Detection Review
+
+[OneDrive.exe Access to Explorer.exe](04-Investigations/02-Full-Lifecycle-Investigations/01-OneDrive-Explorer-Process-Access/03-Detection-Engineering/)
+
+- Confirmed repeated Level 12 alert noise from expected application behavior
+- Reviewed Wazuh Rule `92910` and proposed a narrowly scoped child rule
+- Passed controlled positive and negative condition tests
+- Documented unsuccessful live validation
+- Deferred the production change without reducing existing detection coverage
 
 ---
 
