@@ -210,20 +210,34 @@ AESOC currently includes two completed detection projects and one full-lifecycle
 
 ## Skills Demonstrated
 
-- Alert triage
-- Endpoint and network investigation
-- SIEM and NSM analysis
-- Log and event correlation
-- MITRE ATT&CK mapping
-- Detection engineering
-- Detection tuning
-- SOAR workflow development
-- Case and ticket lifecycle management
-- Analyst ownership and handoffs
-- Dashboard development
-- Technical documentation
-- Network segmentation
-- Controlled adversary simulation
+## IT Operations Skills
+
+Building and operating AESOC required hands-on IT administration and troubleshooting across:
+
+* Windows Server 2025 and Active Directory
+* Windows 10/11 and Rocky Linux endpoints
+* Domain membership, user accounts, authentication, and access services
+* Proxmox VE virtualization and virtual machine administration
+* OPNsense routing, firewall rules, VLANs, and network segmentation
+* Endpoint-agent deployment, configuration, and health validation
+* Connectivity, authentication, service, telemetry, and API integration troubleshooting
+* Zammad ticket routing, ownership assignment, status tracking, escalation, and closure documentation
+* Technical runbooks, architecture diagrams, troubleshooting records, and GitHub documentation
+
+## Security Operations Skills
+
+* Alert triage and prioritization
+* Endpoint and network investigation
+* SIEM and network security monitoring analysis
+* Log, event, and telemetry correlation
+* MITRE ATT&CK mapping
+* Detection engineering and validation
+* Detection tuning and false-positive reduction
+* SOAR workflow development
+* Case lifecycle management
+* Analyst ownership, escalation, and handoffs
+* Dashboard development
+* Controlled adversary simulation
 
 ---
 
