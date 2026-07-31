@@ -26,7 +26,6 @@ The projects cover identity and access management investigations, Microsoft Entr
 | --- | --- |
 | [Azure RBAC Role Assignment Detection](02-Microsoft-Sentinel/01-Azure-RBAC-Role-Assignment-Detection/) | KQL analytics, Azure Activity monitoring, account and IP entity mapping, alert generation, incident investigation, containment, and closure |
 
-## Cloud Security Workflow
 
 ## Technologies
 
